@@ -1,5 +1,17 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	background: rgba(230,165,0,1);
+	background: -moz-linear-gradient(120deg, rgba(230,165,0,1) 0%, rgba(230,210,0,1) 100%);
+	background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(230,165,0,1)), color-stop(100%, rgba(230,210,0,1)));
+	background: -webkit-linear-gradient(120deg, rgba(230,165,0,1) 0%, rgba(230,210,0,1) 100%);
+	background: -o-linear-gradient(120deg, rgba(230,165,0,1) 0%, rgba(230,210,0,1) 100%);
+	background: -ms-linear-gradient(120deg, rgba(230,165,0,1) 0%, rgba(230,210,0,1) 100%);
+	background: linear-gradient(120deg, rgba(230,165,0,1) 0%, rgba(230,210,0,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e6a500', endColorstr='#e6d200', GradientType=1 );
+}
+
 body {
-	background-color: #E6D200;
 	color: #ffffff;
 	font-size: 250%;
 	font-family: Lato, Roboto, sans-serif;
