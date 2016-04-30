@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Słońce</title>
+		<link href="theme.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato:400,900,300&subset=latin-ext,latin" rel="stylesheet" type="text/css">
+		<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+		<script language="JavaScript">
+			function solve(form) {
+				ilosc = parseFloat(form.ilosc.value);
+				moc = parseFloat(form.moc.value);
+				sprawnosc = parseFloat(form.sprawnosc.value);
+				result = parseFloat(ilosc*moc*sprawnosc/100);
+				form.wynik.value = result;
+				var selects = document.getElementsByClassName("tbh");
+				for(var i =0, il = selects.length;i<il;i++){
+					selects[i].className += " hidden";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<div class="wrap">
+			<form>
+			<table>
+				<tr>
+					<td><div class="minheight">Ilość paneli</div></td>
+					<td><input type="text" class="text" name="ilosc" size="7"> szt.</td>
+				</tr>
+				<tr>
+					<td><div class="minheight">Moc jednego panelu</div></td>
+					<td><input type="text" class="text" name="moc" size="7"> W</td>
+				</tr>
+				<tr>
+					<td><div class="minheight">Sprawność</div></td>
+					<td><input type="text" class="text" name="sprawnosc" size="7"> %</td>
+				</tr>
+				<tr>
+					<td><div class="minheight"><input type="button" class="button" value="Oblicz" onClick="solve(this.form)"></div></td>
+				</tr>
+				<tr class="tbh">
+					<td><div class="minheight"></div></td>
+				</tr>
+				<tr class="tbh">
+					<td><div class="minheight">Moc układu</div></td>
+					<td><input type="text" class="text" name="wynik" size="7"> W</td>
+				</tr>
+			</table>
+			</form>
+		</div>
+	</body>
+</html>
