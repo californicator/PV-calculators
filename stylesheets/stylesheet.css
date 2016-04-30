@@ -56,8 +56,7 @@ a {
 .page-header {
   color: #fff;
   text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, rgba(230,165,0,1) 0%, rgba(230,210,0,1) 100%); }
+  background: rgba(230,210,0,1); }
 
 @media screen and (min-width: 64em) {
   .page-header {
